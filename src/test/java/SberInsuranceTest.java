@@ -69,29 +69,16 @@ public class SberInsuranceTest {
         driver.findElement(By.xpath("//span[text() = 'Оформить']")).click();
 
         //На вкладке "Оформить" заполняем поля
-        driver.findElement(By.xpath("//input[@name = 'insured0_surname']")).click();
         driver.findElement(By.xpath("//input[@name = 'insured0_surname']")).sendKeys("Veliiev");
-        driver.findElement(By.xpath("//input[@name = 'insured0_name']")).click();
         driver.findElement(By.xpath("//input[@name = 'insured0_name']")).sendKeys("Novruz");
-        driver.findElement(By.xpath("//input[@name = 'insured0_birthDate']")).click();
         driver.findElement(By.xpath("//input[@name = 'insured0_birthDate']")).sendKeys("23031991");
-        driver.findElement(By.xpath("//input[@name = 'surname']")).click();
         driver.findElement(By.xpath("//input[@name = 'surname']")).sendKeys("Петров");
-        driver.findElement(By.xpath("//input[@name = 'name']")).click();
-        driver.findElement(By.xpath("//input[@name = 'name']")).click();
-
         driver.findElement(By.xpath("//input[@name = 'name']")).sendKeys("Иван");
-        driver.findElement(By.xpath("//input[@name = 'middlename']")).click();
         driver.findElement(By.xpath("//input[@name = 'middlename']")).sendKeys("Иванович");
-        driver.findElement(By.xpath("//input[@name = 'birthDate']")).click();
         driver.findElement(By.xpath("//input[@name = 'birthDate']")).sendKeys("20121989");
-        driver.findElement(By.xpath("//input[@name = 'passport_series']")).click();
         driver.findElement(By.xpath("//input[@name = 'passport_series']")).sendKeys("1111");
-        driver.findElement(By.xpath("//input[@name = 'passport_number']")).click();
         driver.findElement(By.xpath("//input[@name = 'passport_number']")).sendKeys("123456");
-        driver.findElement(By.xpath("//input[@name = 'issueDate']")).click();
         driver.findElement(By.xpath("//input[@name = 'issueDate']")).sendKeys("12122012");
-        driver.findElement(By.xpath("//textarea[@name = 'issuePlace']")).click();
         driver.findElement(By.xpath("//textarea[@name = 'issuePlace']")).sendKeys("Где-то далеко-далеко");
 
         //Проверяем, что все данные заполнены правильно
