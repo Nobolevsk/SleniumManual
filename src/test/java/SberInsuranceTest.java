@@ -1,7 +1,4 @@
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.Timeout;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +22,7 @@ public class SberInsuranceTest {
 
 
     @Before
+    @Ignore
     public void start(){
         System.setProperty("webdriver.chrome.driver", "drv/chromedriver.exe");
 
@@ -37,6 +35,7 @@ public class SberInsuranceTest {
 
 
     @Test
+    @Ignore
     public void testSberInsurance() {
         //Нажимаем на меню "Застраховать себя и имущество"
         driver.findElement(By.xpath("(//SPAN[@class='multiline'])[5]")).click();
@@ -105,6 +104,7 @@ public class SberInsuranceTest {
 
 
     @After
+    @Ignore
     public void Shutup(){
         driver.quit();
     }
