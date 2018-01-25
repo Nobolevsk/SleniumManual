@@ -16,6 +16,9 @@ import java.util.concurrent.TimeUnit;
  * Created by Новруз on 19.01.2018.
  */
 
+/*Данный класс создан для 1 домашнего задания,
+    поэтому для запуска теста с домашним заданием №2 (Test2) добавил к каждому методу @Ignore*/
+
 public class SberInsuranceTest {
     private WebDriver driver;
     private String Url;
