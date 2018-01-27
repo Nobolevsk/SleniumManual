@@ -1,4 +1,5 @@
-import Utils.BaseForTest2;
+import org.junit.Ignore;
+import steps.BaseStepsForTest;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -8,9 +9,10 @@ import pages.*;
  * Created by Новруз on 19.01.2018.
  */
 
-public class Test2 extends BaseForTest2 {
+public class Test2 extends BaseStepsForTest {
 
     @Test
+    @Ignore
     public void newTestSberInsurance() {
 
         //Нажимаем на меню "Застраховать себя и имущество"
