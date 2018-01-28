@@ -53,7 +53,7 @@
 					<properties>
 						<property>
 							<name>listener</name>
-							<value>util.AllureListener</value>
+							<value>utils.AllureListener</value>
 						</property>
 					</properties>
 				</configuration>
