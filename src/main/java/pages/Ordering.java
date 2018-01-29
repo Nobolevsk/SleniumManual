@@ -49,7 +49,7 @@ public class Ordering extends BaseClass {
         this.driver = driver;
     }
 
-    public void Inputs(String print){
+    public void Inputs(){
         surname1.sendKeys("Петров");
         name1.sendKeys("Кирилл");
         birthDate1.sendKeys("12.12.1990");

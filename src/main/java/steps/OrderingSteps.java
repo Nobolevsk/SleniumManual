@@ -8,8 +8,8 @@ import ru.yandex.qatools.allure.annotations.Step;
  */
 public class OrderingSteps extends BaseStepsForTest {
 
-    @Step("Заполнение полей для оформления {0}")
-    public void orderIncuranceTravelers (String orderTravel){
-        new Ordering(driver).Inputs(orderTravel);
+    @Step("Заполнение полей для оформления")
+    public void orderIncuranceTravelers (){
+        new Ordering(driver).Inputs();
     }
 }

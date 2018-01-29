@@ -1,3 +1,4 @@
+import org.junit.Ignore;
 import org.junit.Test;
 import ru.yandex.qatools.allure.annotations.Title;
 import steps.*;
@@ -9,6 +10,7 @@ public class TestWithAllureReport extends BaseStepsForTest {
 
 
     @Test
+    @Ignore
     @Title("Страхование путешественников")
     public void incuranceTest (){
         MenuSteps menuSteps = new MenuSteps();
@@ -24,10 +26,7 @@ public class TestWithAllureReport extends BaseStepsForTest {
         choosePoliceSteps.selectPolice("Минимальная");
         choosePoliceSteps.selectOrder("Оформить");
 
-        orderingSteps.orderIncuranceTravelers("fff");
-
-
-
+        orderingSteps.orderIncuranceTravelers();
 
     }
 }

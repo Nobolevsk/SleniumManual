@@ -38,7 +38,7 @@ public class Test2 extends BaseStepsForTest {
 
         //На вкладке "Оформить" заполняем поля
         Ordering ordering = new Ordering(driver);
-        ordering.Inputs("fff");
+        ordering.Inputs();
 
         //Нажимаем "Продолжить"
         driver.findElement(By.xpath("//span[@class = 'b-continue-btn']")).click();

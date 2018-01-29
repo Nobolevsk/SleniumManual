@@ -1,5 +1,7 @@
-package steps;
+package steps.Task3;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
@@ -13,8 +15,6 @@ import utils.TestProperties;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import static org.junit.Assert.assertEquals;
-
 /**
  * Created by Новруз on 24.01.2018.
  */
@@ -27,8 +27,7 @@ public class BaseStepsForTest {
         return driver;
     }
 
-    @BeforeClass
-    @Ignore
+    @Before
     public static void setUp() throws Exception {
         switch (properties.getProperty("browser")){
             case "firefox":
@@ -51,8 +50,7 @@ public class BaseStepsForTest {
         driver.get(Url);
     }
 
-    @AfterClass
-    @Ignore
+    @After
     public static void tearDown() throws Exception {
         driver.quit();
     }
