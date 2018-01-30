@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SleniumManual.iml" filepath="$PROJECT_DIR$/SleniumManual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SleniumManualALLTask.iml" filepath="$PROJECT_DIR$/SleniumManualALLTask.iml" />
     </modules>
   </component>
 </project>
