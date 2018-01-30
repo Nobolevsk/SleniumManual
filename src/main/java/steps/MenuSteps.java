@@ -1,13 +1,21 @@
 package steps;
 
+import org.openqa.selenium.WebDriver;
 import pages.Menu;
 import ru.yandex.qatools.allure.annotations.Step;
+import static steps.BaseStepsForTest.driver;
 
 /**
  * Created by Новруз on 27.01.2018.
  */
-public class MenuSteps extends BaseStepsForTest {
+public class MenuSteps  {
 
+
+    private static WebDriver driver;
+
+    public static WebDriver getDriver() {
+        return driver;
+    }
 
     @Step("Нажимаем на кнопку Застраховать себя и имущество {0}")
     public void incuranceYourself (String mainItem){

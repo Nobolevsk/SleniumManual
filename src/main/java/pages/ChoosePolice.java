@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import steps.BaseStepsForTest;
 
 
 /**
@@ -19,10 +20,13 @@ public class ChoosePolice extends BaseClass {
     @FindBy(xpath = "//span[@class = 'b-button-block-center']")
     WebElement order;
 
+
     public ChoosePolice(WebDriver driver){
         PageFactory.initElements(driver, this);
         this.driver = driver;
     }
+
+
 
     public void minimalnaya(String nameOfPolice){
         for (String window2 :
@@ -36,6 +40,10 @@ public class ChoosePolice extends BaseClass {
 
     public void orderItem(String clickOrder){
         order.findElement(By.xpath("//span[text() = '"+clickOrder+"']")).click();
+    }
+
+    public ChoosePolice() {
+        PageFactory.initElements(BaseStepsForTest.getDriver(), this);
     }
 
 }

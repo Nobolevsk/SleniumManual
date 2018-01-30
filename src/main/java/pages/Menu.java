@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import steps.MenuSteps;
 
 /**
  * Created by Новруз on 25.01.2018.
@@ -30,6 +31,10 @@ public class Menu extends BaseClass{
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("(//div[@class = 'alt-menu-collapser__hidder'])[5]"))));
         subMainItem.findElement(By.xpath("(//a[contains (text(), '"+nameItem2+"')])[1]")).click();
 
+    }
+
+    public Menu(){
+        PageFactory.initElements(MenuSteps.getDriver(), this);
     }
 
 }

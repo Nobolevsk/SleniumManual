@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import steps.OrderingSteps;
 
 /**
  * Created by Новруз on 25.01.2018.
@@ -63,5 +64,9 @@ public class Ordering extends BaseClass {
         issuePlace.sendKeys("Там");
     }
 
+
+    public Ordering(){
+        PageFactory.initElements(OrderingSteps.getDriver(), this);
+    }
 
 }

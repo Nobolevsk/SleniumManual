@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import steps.InsuranceTravelersSteps;
 
 
 /**
@@ -24,6 +25,10 @@ public class InsuranceTravelers extends BaseClass {
     public void orderOnline(){
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(".//h1[text() = 'Страхование путешественников']"))));
         title.findElement(By.xpath("(//a[@href = 'https://online.sberbankins.ru/store/vzr/index.html'])/*")).click();
+    }
+
+    public InsuranceTravelers(){
+        PageFactory.initElements(InsuranceTravelersSteps.getDriver(), this);
     }
 
 }

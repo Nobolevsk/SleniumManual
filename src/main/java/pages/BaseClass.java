@@ -11,4 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BaseClass {
     public WebDriver driver = BaseStepsForTest.driver;
     Wait<WebDriver> wait = new WebDriverWait(driver,5);
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 }
