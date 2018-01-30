@@ -10,8 +10,6 @@ import static steps.BaseStepsForTest.driver;
  */
 public class OrderingSteps {
 
-    private static WebDriver driver;
-
     public static WebDriver getDriver() {
         return driver;
     }
